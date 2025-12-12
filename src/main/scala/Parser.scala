@@ -52,3 +52,5 @@ object Parser {
   private def validateSugar(sugar: Int): Either[ParseError, Int] =
     if (sugar >= 0 && sugar <= 10) Right(sugar) else Left(ParseError("Сахар: 0-10"))
 }
+
+case class ParseError(msg: String)

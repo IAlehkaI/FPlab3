@@ -38,4 +38,4 @@ object ProductCatalog {
     drinks.map(price).sum
 }
 
-case class ParseError(msg: String)
+

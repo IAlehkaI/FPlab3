@@ -63,6 +63,7 @@ object Main {
     println("Чаи: Ahmad(100р), Lipton(125р) | Кофе: Nescafe(90р), Jacobs(110р)")
     println("Сахар: 5р/шт (0-10), Молоко: 20р")
     println("Вводите по 4 строки: тип производитель сахар молоко(y/n)")
+    println("Пустая трока - тоже выход")
     println("=" * 50)
 
     process(OrderHistory(), consoleInput, 1)
