@@ -1,6 +1,12 @@
 sealed trait DrinkType
+case object Coffee extends DrinkType
+case object Tea extends DrinkType
 
 sealed trait Producer
+case object Ahmad extends Producer
+case object Lipton extends Producer
+case object Nescafe extends Producer
+case object Jacobs extends Producer
 
 case class Drink(drinkType: DrinkType, producer: Producer, sugar: Int, milk: Boolean)
 case class OrderHistory(drinks: List[Drink] = Nil)
